@@ -11,8 +11,8 @@ type InitialData = {
   fullName: string
 }
 
-const ONE_DAY_IN_MS = 24 * 60 * 60 * 1000
-const THREE_DAYS_IN_MS = 3 * ONE_DAY_IN_MS
+const ONE_DAY_IN_MS = 604800 / 2
+const THREE_DAYS_IN_MS = 2 * ONE_DAY_IN_MS
 // const SEVEN_DAYS_IN_MS = 7 * ONE_DAY_IN_MS
 
 const getUserState = async (email: string): Promise<UserState> => {
